@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Project with Tailwind CSS and Shadcn Package
+
+This project uses **Tailwind CSS** in combination with the **Shadcn** package for styling.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+
+- Ensure you have [Node.js](https://nodejs.org/) installed on your system.
+
+### Installation
+
+1. Clone this repository to your local machine:
+
+```
+git clone https://github.com/husnain129/nextjs-shadcn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Change into the project directory:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd nextjs-shadcn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install project dependencies using **Yarn** (make sure you have Yarn installed):
 
-## Learn More
+```
+yarn install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Husky Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project includes **Husky** for pre-commit hooks. To enable Husky, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Install Husky:
 
-## Deploy on Vercel
+```
+yarn add husky
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Run the prepare script:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+yarn prepare
+```
+
+3. Make Husky and Git hooks executable by running the following command in your terminal:
+
+```
+chmod ug+x .husky/* && chmod ug+x .git/hooks/*
+```
+
+### Commitlint Configuration
+
+The project includes a `commitlint.config.js` file, which defines the rules for commit messages. Please adhere to these rules when writing commit messages to maintain a consistent and clean commit history.
+
+## Usage
+
+Feel free to modify and expand upon this project to build your Next.js application with Tailwind CSS and Shadcn.
+
+## License
+
+This project is licensed under the MIT License. For full license details, see the [LICENSE](LICENSE) file.
